@@ -1,0 +1,20 @@
+<meta name="robots" content="noindex">
+<h1>LSTM-based Tesseract 4-alpha OCR service</h1>
+<p>Enter input images here:</p>
+<form method="post" enctype="multipart/form-data"><input type="file" name="image" onchange="document.forms[0].submit()"></form>
+
+<p>
+Or, use the service from command-line:
+<pre>curl -F "image=@image.png" https://tools.wmflabs.org/tesseract-ocr-service/</pre>
+</p>
+
+<p>If you want to use the service with a language other than Persian add
+English, add <a href="https://en.wikipedia.org/wiki/ISO_639_macrolanguage">
+ISO 639-3 code</a> of it at the end of url, something like:</p>
+
+<p>
+<code>https://tools.wmflabs.org/tesseract-ocr-service/eng</code> or
+<code>https://tools.wmflabs.org/tesseract-ocr-service/fas+eng</code> (default)
+</p>
+
+<p>Source: https://github.com/ebraminio/tos</p>
